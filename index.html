@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+  
+
+
+
+  
+
+
+
+
+  </head>
+
+<body class=bg-dark>
+  <div class="go-up"> <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></div>
+      <nav class="navbar  navbar-dark   fixed-top "style="background-color:#000000;">
+        <div class="container-fluid">
+          <a class="navbar-brand px-2" href="#">Arnab Das</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon " ></span>
+          </button>
+
+
+          <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style=" max-width:70%;" >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><p class= text-light></p> </p></h5>
+              <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <div class="text-center img-fluid ">
+                <img src="assets/profile-pic.jpg" class="test rounded-circle " alt="Arnab Das"  >
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
+                    <li class="nav-item  d-flex justify-content-center">
+                      <a class="nav-link " aria-current="page" href="#"><p class="text-lg-center text-warning mb-3 " style="padding-left:15px;"> A R N A B </p></a>
+                    </li>
+                    </ul>
+                </div>
+
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
+                <li class="nav-item  d-flex justify-content-center">
+                  <a class="nav-link " aria-current="page" href="#SEC-HOME"><p class="text-lg-center text-white-50">HOME</p></a>
+                </li>
+                <li class="nav-item  d-flex justify-content-center">
+                  <a class="nav-link" href="#SEC-ABOUT"><p class="text-lg-center text-white-50">ABOUT</p></a>
+                </li>   
+                <li class="nav-item  d-flex justify-content-center">
+                    <a class="nav-link" href="#SEC-EDUCATION"><p class="text-lg-center text-white-50">EDUCATIONS</p></a>
+                  </li>   
+                  <li class="nav-item  d-flex justify-content-center">
+                    <a class="nav-link" href="#SEC-PROJECT"><p class="text-lg-center text-white-50">PROJECTS</p></a>
+                  </li>   
+                <li class="nav-item  d-flex justify-content-center">
+                    <a class="nav-link" href="#SEC-SKILL"><p class="text-lg-center text-white-50">SKILLS</p></a>
+                  </li>         
+                  <li class="nav-item  d-flex justify-content-center ">
+                    <a class="nav-link" href="#SEC-RESUME"><p class="text-lg-center text-white-50">RESUME</p></a>
+                  </li>  
+                  <li class="nav-item  d-flex justify-content-center ">
+                    <a class="nav-link" href="#SEC-CONTACT"><p class="text-lg-center text-white-50">CONTACT</p></a>
+                  </li>   
+                  
+                  <li class="nav-item  d-flex justify-content-center ">
+                    <ul class="nav d-flex justify-content-center navbar  data-bs-toggle  position-absolute bottom-0 end-0 w-100  "style="background-color:#000;border-top:8px solid #b59b19 ">
+                        <li class="nav-item d-flex justify-content-between mx-2">
+                          <a class="nav-link active" aria-current="page" href="https://www.github.com/arnabdas95/"><p class="text-lg-center "><img  src="assets/icons/github.png" style="width:20px;height:20px;"></p></a>
+                        </li>
+                        <li class="nav-item  mx-2">
+                          <a class="nav-link"  href="https://www.linkedin.com/in/arnabdas95/"><p class="text-lg-center "><img  src="assets/icons/linkedin.png" style="width:20px; height:20px;"></p></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link"  href="https://www.instagram.com/__._arnav_.__" ><p class="text-lg-center "><img   src="assets/icons/instagram.png" style="width:20px; height:20px;"></p></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link"  href="https://twitter.com/Arnab_Das95" ><p class="text-lg-center "> <img  src="assets/icons/twitter.png" style="width:20px; height:20px;"></p></a>
+                          </li> 
+                         
+                        
+                      </ul>
+                  </li>    
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav> 
+
+    
+  
+<!--HOME SECTION-->
+<section id="SEC-HOME">
+    <div class="home-container jumbotron jumbotron-fluid"> 
+     <span>
+      <p class="text-center cover-text m-2">
+       <span id="landing-text" style="color:#FFD523; font-size: 30px;">Hello World !!</span>     
+      <br>I am Arnab. M.Tech. Student at NIT Agartala. 
+     </p>
+    </span>
+    </div>
+  
+
+
+
+    <div class="home" > 
+      <div id ="education" class="container-fluid d-flex flex-md-row justify-content-md-between flex-column   mb-1 px-0">
+        <div class=" px-1 mb-2 bd-highlight  "><a class="item1" href="#SEC-ABOUT" ><img src="assets/2.png" class="img-fluid project" alt="ABOUT MYSELF"><div class="textonimage"><h3>About me</h3></div></a>
+         
+        </div>
+        <div class="px-1 mb-2 bd-highlight  "><a class="item1" href="#SEC-PROJECT"><img src="assets/1.png" class="img-fluid project" alt="projects"><div class="textonimage"><h3>Projects</h3></div></a></div>      
+      </div>
+
+      <!--2nd row-->
+      <div class="d-flex flex-row bd-highlight justify-content-center">
+          <div class="px-1 d-flex flex-row bd-highlight justify-content-center "><a class="item1" href="#SEC-EDUCATION"><img src="assets/4.png" class="img-fluid " alt="EDUCATION"><div class="textonimage2"><h5>Education</h5></div></a></div>  
+          <div class="px-1 d-flex flex-row bd-highlight justify-content-center "><a class="item1" href="#SEC-SKILL"><img src="assets/3.png" class="img-fluid" alt="SKILLS"><div class="textonimage2"><h5>Skills</h5></div></a></div>
+            
+          <div class="  d-flex flex-column bd-highlight justify-content-center">
+            <div class=" px-1  d-flex flex-row bd-highlight  justify-content-center">
+              <div class="  d-flex flex-row bd-highlight justify-content-center"><a href="https://www.github.com/arnabdas95/"><img src="assets/github.png" class="img-fluid" alt="github"></a></div>
+              <div class="  d-flex flex-row bd-highlight justify-content-center"><a href="https://www.linkedin.com/in/arnabdas95/"><img src="assets/linkedin.png" class="img-fluid" alt="linkedin"></a></div>            
+            </div>
+            <div class=" px-1  d-flex flex-row bd-highlight  justify-content-center">
+              <div class="  d-flex flex-row bd-highlight justify-content-center"><a href="https://twitter.com/Arnab_Das95"><img src="assets/twitter.png" class="img-fluid" alt="twitter"></a></div>
+              <div class="  d-flex flex-row bd-highlight justify-content-center"> <a href="https://www.instagram.com/__._arnav_.__/"><img src="assets/instagram.png" class="img-fluid "  alt="instagram" ></a></div>            
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>  
+
+
+
+  <!--about myself section-->
+  <section id="SEC-ABOUT">
+   <div class="about-container">
+     <div class="about-image">
+      <img src="assets/about-profile-pic.jpg">
+     </div>
+     <div class="about_content" >
+       <h1>ABOUT<br> </h1>
+       <p>
+        I am Arnab Das. At present, I am doing M.TECH. (2021-2023) in Artificial Intelligence at National Institute Technology Agartala (NITA), Tripura.
+        <br><br>
+        I have done my BSc and MSc in Computer Science. While my bachelor’s degree offered me both depth and breadth on the fundamentals of Computer Science, through my Masters’ I gained exposure to different technical aspects of the subject.
+         During that time, I have often thought about how Tesla self-driving car works, how GooglePhoto groups similar faces or Amazon/Flipkart can pop-up the relevant advertisements in our social media pages or YouTube can suggest videos of our interests, or how 'Ok Google' listens and reacts almost like a human.
+         After a little bit of research, I have found about Artificial Intelligence and Machine Learning.
+          It is overwhelming to think how fast AI is advancing and how the future will look with the big leaps in AI. It is also a bit scary that according to some sinister predictions that in the future AI will rule our world virtually.
+           But all these overwhelming or scary feelings made me all the more interested in this world and thus started the beginning of my love of Artificial Intelligence.
+        <br><br>I approach Artificial Intelligence with Python. Machine Learning and Deep Learning are my most favorite topics. I also have a love for visualization of data based on some python libraries. It has always given me goosebumps when my model works well at the end of many sleepless nights and restless days.
+       <br><br> Apart from technology, I am a nature lover. Nature, wildlife, and night photography is a passionate hobby.  I also like wood-crafting too. Shaping physical objects from wood gives me a lot of satisfaction. A final dream is to stay amidst nature, among mountains, and take photographs at night.
+        
+       </p>
+         
+     </div>
+   </div>
+  </section>
+     
+
+   <!--Education myself section-->
+   <section id="SEC-EDUCATION">
+     <div class="education-container">
+     
+    <div class="container">
+      <h1>EDUCATION</h1>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-body">
+                      <div id="content">
+                          <ul class="timeline">
+                              <li class="event" data-date="2021-2023 (Expecte)">
+                                  <h3>MTECH in ARTIFICIAL INTELLIGENCE</h3>
+                                  <p>National Institute of Technology Agartala (NITA), Tripura</p>
+                              </li>
+                              <li class="event" data-date="2017-2019">
+                                  <h3>MSC in COMPUTER SCIENCE</h3>
+                                  <p>Vidyasagar University,Medinipur,West Bengal</p>
+                              </li>
+                              <li class="event" data-date="2014-2017">
+                                  <h3>BSC in COMPUTER SCIENCE</h3>
+                                  <p>Panskura Banamali College, Panskura, West Bengal</p>
+                              </li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+   </section>
+
+
+
+   <section id="SEC-PROJECT">
+     <div class="project-container">
+       <h1>PERSONAL PROJECTS</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/speedkey.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pb-2" style="border-bottom:1px dotted #FFD523;">SpeedKey typing practice app using JavaScript</h5>
+              <p class="card-text">This web app is created using html css and javascript.One can practice typing among various random text and 
+                also observe their speed and error rate</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://arnabdas95.github.io/SpeedKey_typing/" style="color:#FFD523;text-decoration:none">Project link |</a>
+                <a href="https://github.com/arnabdas95/SpeedKey_typing" style="color:#FFD523;text-decoration:none">Source code </a>
+                </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/bitspaceblog.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pb-2" style="border-bottom:1px dotted #FFD523;">BitsSpace Blog using python ,Django, Bootstrap</h5>
+              <p class="card-text">Bitspace blog is created using python with django framework and SqlLite database.One can write blog after sign up and login.For reading blog 
+                no authenication is required.CRUD method is applied here.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/arnabdas95/BitSpace_Blog" style="color:#FFD523;text-decoration:none">Source code </a></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/flappybird.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pb-2" style="border-bottom:1px dotted #FFD523;">Famous Flappy Bird game using Python and Pygame</h5>
+              <p class="card-text">A clone of famous Flappy bird game using Python's Pygame module</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/arnabdas95/Dino_Run" style="color:#FFD523;text-decoration:none">Source code </a></small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/musicplayer.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pb-2" style="border-bottom:1px dotted #FFD523;">Soulful mp3 Player using Python Tkinter,Pygame</h5>
+              <p class="card-text">Soulful mp3 player using python pygame and tkinter  can play any mp3 with play pause backword, forword volume control and seek suport.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/arnabdas95/MusicPlayer" style="color:#FFD523;text-decoration:none">Source code </a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/task.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pb-2" style="border-bottom:1px dotted #FFD523;">Task Organizer using Djago, HTML, CSS</h5>
+              <p class="card-text">A simple Task organiser using Python Django SqlLite database.One can add,update delete catagories of task and todo list to different catagories.HTML, CSS is used for page design</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/arnabdas95/Task-Organiser" style="color:#FFD523;text-decoration:none">Source code </a></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+           <img src="assets/pingoweather.png" class="card-img-top" alt="..."> 
+            <div class="card-body">
+              <h5 class="card-title pb-2" style="border-bottom:1px dotted #FFD523;">Weather App using API,Python,Django</h5>
+              <p class="card-text">Current time weather information app is created by Python django and 'open weather' API.It can show the current temperature humidity air pressure sun rise sunset time of a huge number of places</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted" ><a href="https://pingoweather.herokuapp.com/" style="color:#FFD523;text-decoration:none">Project link</a> | <a>Source code</a></small>
+            </div>        
+        </div>
+
+     
+      </div>
+        
+     
+      
+
+       
+
+      
+      </div>
+     </div>
+   </section>
+
+
+
+
+   <section id="SEC-SKILL"> 
+    <h1>SKILLS</h1>
+     <div class="skill-container ">
+      
+      <div class="accordion accordion-flush " id="accordionFlushExample">
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header " id="flush-headingOne">
+            <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             <h4 >ARTIFICIAL INTELLIGENCE</h4> 
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+             
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                NLP
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Computer Vision
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Advance data structure and algorithm
+             </button>  
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Fuzzy Logic
+              </button>
+          
+            </span></div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <h4>MACHINE LEARNING & DEEP LEARNING</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><span class="d-inline-block " tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+             
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Regression">
+                Scikit-Learn
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Regression">
+                Tensor-Flow
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Regression">
+                Open-CV
+              </button>
+              
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="supervised Learning">
+                Naive Bayes Classification
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="supervised Learning">
+                Simple Linear regression
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="supervised Learning">
+                Logistic regression
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Reinforcement Learning">
+                Support Vector Machines
+              </button>
+              <button type="button" disabled class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="NLP">
+                Decision Trees
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Data Visualization">
+                Random Forests
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Data Analysis">
+                PCA
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                k-Means Clustering
+              </button> 
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Kernal Density Estimation
+              </button>
+             
+              
+             
+              </span></div>
+        </div>
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <h4>DATA ANALYSIS AND VISUALIZATION</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><span class="d-inline-block " tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip"></span>
+                    
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Numpy
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Pandas
+              </button>
+              <button type="button" disabled class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Statistics for Data Analysis
+              </button>  
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                MatplotLib
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Seaborn
+              </button>
+              <button type="button" disabled class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Ploty
+              </button>           
+            </span></div>
+        </div>       
+      </div>        
+      </div>
+
+
+
+      <div class="accordion " id="accordionExample">
+      
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             <h4> PROGRAMMING LANGUAGES</h4>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="d-inline-block " tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+                
+             
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Python
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  c
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  c++
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  HTML
+                </button>
+                <button type="button" disabled class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  JavaScript
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  CSS
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  SCSS
+                </button>           
+              </span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h4> WEB TECHNOLOGIES AND OTHERS</h4>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="d-inline-block " tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+               
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Django
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                 Bootstrap
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  REST API
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Python Tkinter
+                </button>
+                <button type="button" disabled class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Pygame
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Python Request
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  SqlLite
+                </button>
+               
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Heroku
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Git and Github
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Adobe Photoshop & Illustrator
+                </button>
+                <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                  Web crawling with Selenium, BeautifulSoup
+                </button>
+               </span></div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+     </div>
+   </section>
+
+<!-- 
+ <section="SEC-CERTIFICATE">
+  <div class="certificate">
+    <h1>CERTIFICATES</h1>
+    <div class="certificate-container">
+     <div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>  -->
+
+
+<!-- section resume -->
+
+
+<ssection id="SEC-RESUME">
+  <div class="resume">
+    <h1>RESUME</h1>
+    <div class="resume-content">
+      <img src="assets/docs/arnabdas.jpg" alt="resume">
+      <div class="btn-group res-btn">
+        <a href="assets/docs/resumedoc.pdf" class="btn btn-warning" aria-current="page">Download Resume</a>
+    
+    </div>
+  </div>
+</ssection>
+
+
+
+<section id="SEC-CONTACT">
+  <h1>CONTACT</h1>
+  <div class="contact">  
+    <div class="contact-container">
+      <p><img src="assets/icons/telephone.png" > +91-9679067531</p>
+      <p><img src="assets/icons/gmail.png" >   arnabdascs@gmail.com</p>
+      <p><img src="assets/icons/location.png" > Medinipur West Bengal, 721126</space></p>
+    </div>
+   
+  </div>
+</section>
+  
+<section id="FOOT">
+  <div class="footer">
+    <div class ="footer-content" >
+    
+          <a  href="https://www.github.com/arnabdas95/"><p class="text-lg-center "><img src="assets/icons/github.png" ></p></a>  
+     
+          <a  href="https://www.linkedin.com/in/arnabdas95/"><p class="text-lg-center "><img src="assets/icons/linkedin.png" ></p></a>
+     
+          <a   href="https://www.instagram.com/__._arnav_.__/" ><p class="text-lg-center "><img src="assets/icons/instagram.png" ></p></a>
+       
+            <a  href="https://twitter.com/Arnab_Das95" ><p class="text-lg-center "> <img src="assets/icons/twitter.png" ></p></a>
+       
+     </div>
+  <div><p>Handcrafted by Arnab Das Year : 2021</p></div> 
+  </div>
+</section>
+  
+
+
+
+
+
+
+   <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+
+      var srol = i=0;
+      var txt= document.getElementById("landing-text").innerHTML;
+      document.getElementById("landing-text").innerHTML ='';
+
+
+      var speed = 100;
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("landing-text").innerHTML += txt.charAt(srol);
+            srol++;
+          setTimeout(typeWriter, speed);
+         }
+        }
+    //calling the function
+    typeWriter();
+
+
+
+
+    </script>
+</body>
+</html>
+
+
